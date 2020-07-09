@@ -3,9 +3,9 @@ import Resume from "./assets/BrentStaples.pdf";
 
 function AboutMe() {
   return (
-    <div className="container">
-      <div className="card-deck mb-3 text-center">
-        <div className="card-secondary col-4">
+    <div className="container text-center">
+      <div className="row my-auto justify-content-center border-bottom">
+        <div className="card-secondary d-inline-block my-4 mx-3">
           <div className="card-header">
             <h1>About Me</h1>
           </div>
@@ -16,8 +16,8 @@ function AboutMe() {
               knowledge of math and writing. Following my undergraduate degree,
               I have taken two years to pursue my interest in computer science
               and build a strong foundation in Java and C++. It is now my intent
-              to further pursue my interest in games and computer science by
-              seeking a career in the gaming industry.
+              to further pursue my interest in computer science by seeking a job
+              as a software engineer.
             </p>
           </div>
           <div className="card-footer">
@@ -28,7 +28,7 @@ function AboutMe() {
             </button>
           </div>
         </div>
-        <div className="card-secondary col-4">
+        <div className="card-secondary d-inline-block my-4 mx-3">
           <div className="card-header">
             <h1>Education</h1>
           </div>
@@ -40,7 +40,7 @@ function AboutMe() {
             </p>
           </div>
         </div>
-        <div className="card-secondary col-4">
+        <div className="card-secondary d-inline-block my-4 mx-3">
           <div className="card-header">
             <h1>Current Projects</h1>
           </div>

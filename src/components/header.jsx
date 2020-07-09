@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import keyboard from ".//../assets/keyboard.jpg";
+import keyboard from "./../assets/keyboard.jpg";
 
 class Header extends Component {
   state = {};
@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div>
         <div>
-          <div className="card-dark img-fluid" width="100%">
+          <div className="card-dark" width="100%">
             <img
               className="card-img-top"
               src={keyboard}
@@ -15,7 +15,7 @@ class Header extends Component {
               width="100%"
               height="auto"
             />
-            <div className="card-img-overlay my-5 text-white">
+            <div className="card-img-overlay my-auto text-white">
               <h2 className="card-title ml-4 mb-0">Brent Staples</h2>
               <p className="card-text ml-5">B.S. in Neuroscience</p>
             </div>

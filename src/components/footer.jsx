@@ -6,7 +6,9 @@ class Footer extends Component {
     return (
       <div>
         <footer>
-          <div className="text-center ">Made by Brent Staples with React. </div>
+          <div className="text-center my-4">
+            Made by Brent Staples with React.{" "}
+          </div>
         </footer>
       </div>
     );
