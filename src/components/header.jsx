@@ -7,19 +7,22 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <div className="card-dark">
-            <img
-              className="card-img-top"
-              src={keyboard}
-              alt="keyboard.jpg"
-              width="auto"
-              height="200"
-            />
-            <div className="card-img-overlay my-auto text-white">
-              <h2 className="card-title ml-4 mb-0">Brent Staples</h2>
-              <p className="card-text ml-5">B.S. in Neuroscience</p>
+          <div className="card-dark text-center">
+            <div
+              className="card-title card-img-overlay text-white"
+              style={{ height: 160 }}
+            >
+              <h2 className="mt-3">Brent Staples</h2>
+              <p>B.S. in Neuroscience</p>
             </div>
           </div>
+          <img
+            className="card-img-top"
+            src={keyboard}
+            alt="keyboard.jpg"
+            width="auto"
+            height="160"
+          />
         </header>
       </div>
     );

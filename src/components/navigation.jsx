@@ -12,7 +12,7 @@ class Navigation extends Component {
       <div>
         <Router>
           <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item link mx-3">
                 <Link className="nav-link" to="/">
                   Home
