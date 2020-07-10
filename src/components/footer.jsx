@@ -7,7 +7,7 @@ class Footer extends Component {
       <div>
         <footer>
           <div className="text-center my-4">
-            Made by Brent Staples with React.{" "}
+            Made by Brent Staples with React. Deployed using AWS Amplify.
           </div>
         </footer>
       </div>
