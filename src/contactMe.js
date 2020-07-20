@@ -7,7 +7,7 @@ function ContactMe() {
         <div className="col-1 mx-auto">
           <p className="text-center"></p>
           <p className="text-center">
-            <a className="text-white" href="mailto:staplesbr@live.com">
+            <a className="text-white" href="mailto:brent@brentstaples.com">
               <button className="btn-lg btn-primary">Email</button>
             </a>
           </p>

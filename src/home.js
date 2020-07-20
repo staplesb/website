@@ -8,9 +8,9 @@ function Home() {
       <div className="jumbotron border-bottom">
         <div className="mx-auto">
           <p className="text-center">
-            With a B.S. in Neuroscience and the variety of Computer Science
-            courses I have taken, I hope to bring a unique perspective to the
-            design and implementation of applications.
+            With a B.S. in Neuroscience and the Computer Science courses I have
+            studied, I will to bring a unique perspective to design and
+            implementation of applications.
           </p>
           <p className="text-center">
             <Link className="text-white" to="/aboutme">
