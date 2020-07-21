@@ -3,12 +3,12 @@ import Resume from "./assets/BrentStaples.pdf";
 
 function AboutMe() {
   return (
-    <div className="container">
+    <div className="container border-bottom">
       <div className="row my-auto justify-content-center">
-        <div className="col-9">
+        <div className="col-11">
           <div className="card flex-md-row d-inline-block my-3 mx-3">
             <div className="card-header text-center">
-              <h1>About Me</h1>
+              <h2>About Me</h2>
             </div>
             <div className="card-body">
               <p>
@@ -35,40 +35,42 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="col-4">
-          <div className="card d-inline-block my-3">
-            <div className="card-header text-center">
-              <h1>Education</h1>
-            </div>
-            <div className="card-body">
-              <p style={{ margin: 0 }}>
-                <b>2013-2017</b>
-              </p>
-              <p style={{ margin: 0 }}>
-                <b>Lafayette College</b>
-              </p>
-              <p>B.S. Neuroscience</p>
-              <p style={{ margin: 0 }}>
-                <b>2017-2019</b>
-              </p>
-              <p style={{ margin: 0 }}>
-                <b>The University of Alabama in Huntsville</b>
-              </p>
-              <p>Computer Science Studies</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-5">
-          <div className="card d-inline-block my-3">
-            <div className="card-header text-center">
-              <h1>Current Projects</h1>
-            </div>
-            <div className="card-body">
-              <p>
-                I am currently working on several web apps developed using
-                React. I am also furthering my knowledge of backend and cloud
-                technologies to support these apps.
-              </p>
+        <div className="col-10">
+          <div className="row">
+            <div className="card-deck">
+              <div className="card my-3">
+                <div className="card-header text-center">
+                  <h2>Education</h2>
+                </div>
+                <div className="card-body" style={{ margin: 0 }}>
+                  <p style={{ margin: 0 }}>
+                    <b>2013-2017</b>
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    <b>Lafayette College</b>
+                  </p>
+                  <p>B.S. Neuroscience</p>
+                  <p style={{ margin: 0 }}>
+                    <b>2017-2019</b>
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    <b>The University of Alabama in Huntsville</b>
+                  </p>
+                  <p>Computer Science Studies</p>
+                </div>
+              </div>
+              <div className="card my-3">
+                <div className="card-header text-center">
+                  <h2>Current Projects</h2>
+                </div>
+                <div className="card-body">
+                  <p>
+                    I am currently working on several web apps developed using
+                    React. I am also furthering my knowledge of backend and
+                    cloud technologies to support these apps.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
