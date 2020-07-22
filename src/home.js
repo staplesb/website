@@ -9,7 +9,7 @@ function Home() {
         <div className="mx-auto">
           <p className="text-center">
             With a B.S. in Neuroscience and a strong foundation in Computer
-            Science, I will to bring a unique perspective to design and
+            Science, I will bring a unique perspective to design and
             implementation of applications.
           </p>
           <p className="text-center">
