@@ -1,58 +1,60 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "../home";
-import AboutMe from "../aboutMe";
-import Projects from "../projects";
-import ContactMe from "../contactMe";
+import React, { useState } from "react";
 
-class Navigation extends Component {
-  state = {};
-  render() {
-    return (
-      <div>
-        <Router>
-          <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item link mx-3">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item link mx-3">
-                <Link className="nav-link" to="/aboutme">
-                  About Me
-                </Link>
-              </li>
-              <li className="nav-item link mx-3">
-                <Link className="nav-link" to="/projects">
-                  Projects
-                </Link>
-              </li>
-              <li className="nav-item link mx-3">
-                <Link className="nav-link" to="/contactme">
-                  Contact Me
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <Switch>
-            <Route path="/aboutme">
-              <AboutMe />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/contactme">
-              <ContactMe />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
-}
+import {
+  Button,
+  Container,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
-export default Navigation;
+const Navi = (props) => {
+  const [collapsed, setCollaped] = useState(true);
+  const toggleNavbar = () => setCollaped(!collapsed);
+
+  return (
+    <div className="navi">
+      <nav className="navbar navbar-dark bg-dark">
+        <NavbarBrand className="mr-auto text-white">
+          <h4 style={{ margin: "0" }}>Brent Staples</h4>{" "}
+          <p style={{ margin: "0" }}>
+            <sup>B.S. in Neuroscience</sup>
+          </p>
+        </NavbarBrand>
+        <button onClick={toggleNavbar} className="navbar-toggler mr-2">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar color="dark">
+            <NavItem>
+              <NavLink href="/" className="text-white">
+                Home
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/aboutme" className="text-white">
+                About Me
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/projects" className="text-white">
+                Projects
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contactme" className="text-white">
+                Contact Me
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </nav>
+    </div>
+  );
+};
+
+export default Navi;

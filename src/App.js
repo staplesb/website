@@ -1,15 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Header from "./components/header";
-import Navigation from "./components/navigation";
+import Routing from "./components/routing";
 import Footer from "./components/footer";
+import { Container } from "reactstrap";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Navigation />
-      <Footer />
+      <Routing />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

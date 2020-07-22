@@ -1,19 +1,24 @@
 import React from "react";
+import {
+  Jumbotron,
+  Button,
+  Container,
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardBody,
+} from "reactstrap";
+import Background from "./assets/background.jpg";
 
 function ContactMe() {
   return (
-    <div>
-      <div className="jumbotron border-bottom">
-        <div className="col-1 mx-auto">
-          <p className="text-center"></p>
-          <p className="text-center">
-            <a className="text-white" href="mailto:brent@brentstaples.com">
-              <button className="btn-lg btn-primary">Email</button>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+    <Container className="contactme">
+      <p className="text-center pt-3">
+        <a className="text-white" href="mailto:brent@brentstaples.com">
+          <button className="btn-lg">Email</button>
+        </a>
+      </p>
+    </Container>
   );
 }
 

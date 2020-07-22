@@ -8,17 +8,28 @@ import MatrixSort from "./assets/MatrixSort.png";
 import SocialNetwork from "./assets/SocialNetwork.png";
 import PingPong from "./assets/pingpong.png";
 import Clock from "./assets/clock.png";
+import {
+  Button,
+  Card,
+  CardImg,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 
 function Projects() {
   return (
-    <div className="container">
-      <div className="row p-5 justify-content-center border-bottom">
-        <div className="card-columns">
-          <div className="card my-3 mx-auto d-inline-block">
-            <div className="card-header">
+    <Container className="projects">
+      <Row className="px-4 justify-content-center">
+        <Col className="card-columns">
+          <Card className="mb-4 mx-auto d-inline-block">
+            <CardHeader>
               <h2>Hex Based Rogue-like</h2>
-            </div>
-            <div className="card-body">
+            </CardHeader>
+            <CardBody>
               <img
                 className="card-img-top mb-3"
                 src={Roguelike}
@@ -32,24 +43,28 @@ function Projects() {
                 gameplay. This project was done using unity and scripts were
                 written in C#.
               </p>
-            </div>
-            <div className="card-footer text-center">
+            </CardBody>
+            <CardFooter className="text-center">
               <a
                 className="text-white"
                 href="https://hexroguelike.netlify.app/"
                 target="_blank"
               >
-                <button className="btn-lg btn-dark m-3">Play</button>
+                <Button color="secondary" className=" m-3">
+                  Play
+                </Button>
               </a>
               <a
                 className="text-white"
                 href="https://github.com/staplesb/portfolio/tree/master/Hex%20based%20Rogue-like"
                 target="_blank"
               >
-                <button className="btn-lg btn-dark m-3">Source Code</button>
+                <Button color="secondary" className="m-3">
+                  Source Code
+                </Button>
               </a>
-            </div>
-          </div>
+            </CardFooter>
+          </Card>
           <ProjectComponent
             header="Implementing A* Pathfinding"
             src={AStar}
@@ -114,9 +129,9 @@ function Projects() {
             progressed the graph also changes color as a gradient. Written in Processing."
             href="https://github.com/staplesb/portfolio/tree/master/clock%20widget"
           />
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

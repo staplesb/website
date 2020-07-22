@@ -1,16 +1,27 @@
 import React from "react";
 import Resume from "./assets/BrentStaples.pdf";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Card,
+  CardImg,
+  CardHeader,
+  CardBody,
+  CardFooter,
+} from "reactstrap";
 
 function AboutMe() {
   return (
-    <div className="container border-bottom">
-      <div className="row my-auto justify-content-center">
-        <div className="col-11">
-          <div className="card flex-md-row d-inline-block my-3 mx-3">
-            <div className="card-header text-center">
+    <Container className="aboutme">
+      <Row className="justify-content-center">
+        <Col md="11">
+          <Card className="flex-md-row d-inline-block mb-4">
+            <CardHeader className="text-center">
               <h2>About Me</h2>
-            </div>
-            <div className="card-body">
+            </CardHeader>
+            <CardBody>
               <p>
                 Pursuing my interest in computer science, I have spent the past
                 couple years building a foundation in this field. I studied at
@@ -27,55 +38,57 @@ function AboutMe() {
                 of writing. As such, I am well suited to interdisciplinary
                 projects.
               </p>
-            </div>
-            <div className="card-footer text-center">
+            </CardBody>
+            <CardFooter className="text-center">
               <a className="text-white" href={Resume} target="_blank">
-                <button className="btn-lg btn-dark">Download Resume</button>
+                <Button color="secondary" size="large">
+                  Download Resume
+                </Button>
               </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-10">
-          <div className="row">
-            <div className="card-deck">
-              <div className="card my-3">
-                <div className="card-header text-center">
-                  <h2>Education</h2>
-                </div>
-                <div className="card-body" style={{ margin: 0 }}>
-                  <p style={{ margin: 0 }}>
-                    <b>2013-2017</b>
-                  </p>
-                  <p style={{ margin: 0 }}>
-                    <b>Lafayette College</b>
-                  </p>
-                  <p>B.S. Neuroscience</p>
-                  <p style={{ margin: 0 }}>
-                    <b>2017-2019</b>
-                  </p>
-                  <p style={{ margin: 0 }}>
-                    <b>The University of Alabama in Huntsville</b>
-                  </p>
-                  <p>Computer Science Studies</p>
-                </div>
+            </CardFooter>
+          </Card>
+          <Row className="justify-content-center">
+            <Col md="11">
+              <div className="card-deck">
+                <Card className="mb-4">
+                  <CardHeader className="text-center">
+                    <h2>Education</h2>
+                  </CardHeader>
+                  <CardBody>
+                    <p style={{ margin: 0 }}>
+                      <b>2013-2017</b>
+                    </p>
+                    <p style={{ margin: 0 }}>
+                      <b>Lafayette College</b>
+                    </p>
+                    <p>B.S. Neuroscience</p>
+                    <p style={{ margin: 0 }}>
+                      <b>2017-2019</b>
+                    </p>
+                    <p style={{ margin: 0 }}>
+                      <b>The University of Alabama in Huntsville</b>
+                    </p>
+                    <p>Computer Science Studies</p>
+                  </CardBody>
+                </Card>
+                <Card className="mb-4">
+                  <CardHeader className="text-center">
+                    <h2>Current Projects</h2>
+                  </CardHeader>
+                  <CardBody>
+                    <p>
+                      I am currently working on several web apps developed using
+                      React. I am also furthering my knowledge of backend and
+                      cloud technologies to support these apps.
+                    </p>
+                  </CardBody>
+                </Card>
               </div>
-              <div className="card my-3">
-                <div className="card-header text-center">
-                  <h2>Current Projects</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    I am currently working on several web apps developed using
-                    React. I am also furthering my knowledge of backend and
-                    cloud technologies to support these apps.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
