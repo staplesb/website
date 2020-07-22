@@ -71,8 +71,8 @@ function AboutMe() {
             <p />
             <p className="text-center pb-3">
               With a B.S. in Neuroscience and a strong foundation in Computer
-              Science, I will bring a unique perspective to the design and
-              implementation of applications.
+              Science, I bring a unique perspective to designing and
+              implementing applications.
             </p>
             <Container className="text-center">
               <More />
