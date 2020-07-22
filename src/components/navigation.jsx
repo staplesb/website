@@ -32,11 +32,6 @@ const Navi = (props) => {
           <Nav navbar color="dark">
             <NavItem>
               <Link to="/" onClick={toggleNavbar} className="nav-link">
-                Home
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/aboutme" onClick={toggleNavbar} className="nav-link">
                 About Me
               </Link>
             </NavItem>

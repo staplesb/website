@@ -13,9 +13,6 @@ class Routing extends Component {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/aboutme">
-            <AboutMe />
-          </Route>
           <Route path="/projects">
             <Projects />
           </Route>
@@ -23,7 +20,7 @@ class Routing extends Component {
             <ContactMe />
           </Route>
           <Route path="/">
-            <Home />
+            <AboutMe />
           </Route>
         </Switch>
       </Router>
