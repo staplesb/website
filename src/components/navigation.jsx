@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import {
   Button,
   Container,
@@ -31,24 +31,24 @@ const Navi = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar color="dark">
             <NavItem>
-              <NavLink href="/" className="text-white">
+              <Link to="/" onClick={toggleNavbar} className="nav-link">
                 Home
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/aboutme" className="text-white">
+              <Link to="/aboutme" onClick={toggleNavbar} className="nav-link">
                 About Me
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/projects" className="text-white">
+              <Link to="/projects" onClick={toggleNavbar} className="nav-link">
                 Projects
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/contactme" className="text-white">
+              <Link to="/contactme" onClick={toggleNavbar} className="nav-link">
                 Contact Me
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
