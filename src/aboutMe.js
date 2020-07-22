@@ -21,7 +21,12 @@ const More = (props) => {
 
   return (
     <div>
-      <Button color="primary" onClick={toggle} style={{ marginBottom: "1rem" }}>
+      <Button
+        color="primary"
+        size="lg"
+        onClick={toggle}
+        style={{ marginBottom: "1rem" }}
+      >
         Read more
       </Button>
       <Collapse isOpen={!collapsed}>
@@ -48,7 +53,7 @@ const More = (props) => {
           </CardBody>
           <CardFooter className="text-center">
             <a className="text-white" href={Resume} target="_blank">
-              <Button color="primary">Download Resume</Button>
+              <Button color="secondary">Download Resume</Button>
             </a>
           </CardFooter>
         </Card>
@@ -110,7 +115,7 @@ function AboutMe() {
                   </CardBody>
                   <CardFooter className="text-center">
                     <Link className="text-white" to="/projects">
-                      <Button color="primary">Past projects</Button>
+                      <Button color="secondary">Past projects</Button>
                     </Link>
                     <Route path="/projects">
                       <Projects />
