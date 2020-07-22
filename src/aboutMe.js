@@ -29,7 +29,7 @@ const More = (props) => {
           <CardHeader className="text-center">
             <h2>About Me</h2>
           </CardHeader>
-          <CardBody>
+          <CardBody className="text-left">
             <p>
               Pursuing my interest in computer science, I have spent the past
               couple years building a foundation in this field. I studied at the
@@ -48,7 +48,7 @@ const More = (props) => {
           </CardBody>
           <CardFooter className="text-center">
             <a className="text-white" href={Resume} target="_blank">
-              <Button color="secondary">Download Resume</Button>
+              <Button color="primary">Download Resume</Button>
             </a>
           </CardFooter>
         </Card>
@@ -66,7 +66,7 @@ function AboutMe() {
             <p />
             <p className="text-center pb-3">
               With a B.S. in Neuroscience and a strong foundation in Computer
-              Science, I will bring a unique perspective to design and
+              Science, I will bring a unique perspective to the design and
               implementation of applications.
             </p>
             <Container className="text-center">
