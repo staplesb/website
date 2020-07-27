@@ -16,9 +16,6 @@ class Routing extends Component {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/contactme">
-            <ContactMe />
-          </Route>
           <Route path="/">
             <AboutMe />
           </Route>

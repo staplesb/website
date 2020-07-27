@@ -18,7 +18,7 @@ const Navi = (props) => {
 
   return (
     <div className="navi">
-      <nav className="navbar navbar-dark bg-dark">
+      <nav className="navbar navbar-dark bg-dark static-top">
         <NavbarBrand className="mr-auto text-white">
           <h4 style={{ margin: "0" }}>Brent Staples</h4>{" "}
           <p style={{ margin: "0" }}>
@@ -41,9 +41,13 @@ const Navi = (props) => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/contactme" onClick={toggleNavbar} className="nav-link">
+              <a
+                href="mailto:brent@brentstaples.com"
+                onClick={toggleNavbar}
+                className="nav-link"
+              >
                 Contact Me
-              </Link>
+              </a>
             </NavItem>
           </Nav>
         </Collapse>

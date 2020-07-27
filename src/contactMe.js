@@ -1,23 +1,58 @@
 import React from "react";
 import {
-  Jumbotron,
-  Button,
   Container,
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardBody,
+  Form,
+  Button,
+  FormGroup,
+  Label,
+  Input,
+  FormText,
+  Jumbotron,
+  FormFeedback,
+  Col,
+  Row,
 } from "reactstrap";
-import Background from "./assets/background.jpg";
 
 function ContactMe() {
   return (
     <Container className="contactme">
-      <p className="text-center pt-3">
-        <a className="text-white" href="mailto:brent@brentstaples.com">
-          <button className="btn-lg">Email</button>
-        </a>
-      </p>
+      <Row className="justify-content-center">
+        <Col md="7">
+          <Jumbotron className="form p-3 text-center">
+            <Form>
+              <FormGroup className="was-validated">
+                <Label for="emailID" hidden>
+                  Email
+                </Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="emailID"
+                  placeholder="Enter email"
+                  required
+                />
+                <FormFeedback onInvalid>
+                  Please enter a valid email address.
+                </FormFeedback>
+              </FormGroup>
+              <FormGroup>
+                <Label for="textID" hidden>
+                  Message
+                </Label>
+                <Input
+                  style={{ height: "300px" }}
+                  type="textarea"
+                  name="text"
+                  id="textID"
+                  placeholder="Enter message"
+                  required
+                />
+              </FormGroup>
+              <Button>Submit</Button>
+            </Form>
+          </Jumbotron>
+        </Col>
+      </Row>
     </Container>
   );
 }

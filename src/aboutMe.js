@@ -115,7 +115,9 @@ function AboutMe() {
                   </CardBody>
                   <CardFooter className="text-center">
                     <Link className="text-white" to="/projects">
-                      <Button color="secondary">Past projects</Button>
+                      <Button color="secondary" size="lg">
+                        Past projects
+                      </Button>
                     </Link>
                     <Route path="/projects">
                       <Projects />
